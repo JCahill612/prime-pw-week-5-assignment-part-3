@@ -31,13 +31,14 @@ console.log('Current collection:', collection);
 //  - Take in an array parameter. (This allows it to be reused to show ///any collection, like the results from the find or search.)
 function showCollection(){
 // - Console.log the number of items in the array.
-    console.log( "Collection:", collection.length );
+    console.log( 'Collection:', collection.length );
 //- Loop over the array and console.log each album's information formatted like: `TITLE by ARTIST, published in YEAR`.
     for (let i = 0; i < collection.length; i++) {
         const record = collection[i];
         console.log( record.title,'by ' + record.artist + ' published in ' + record.yearPublished);
         }
 }
+
 //- Test the `showCollection` function.
 showCollection(collection);
 
