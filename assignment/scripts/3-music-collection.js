@@ -4,9 +4,9 @@ console.log('***** Music Collection *****')
 let collection = [];
 //- Add a function named `addToCollection`. This function should:
 // - Take in the album's `title`, `artist`, `yearPublished` as input parameters
-function addToCollection(artist, title, yearPublished, track){
+function addToCollection(artist, title, yearPublished){
 // - Create a new object having the above properties
-    let record = {artist , title , yearPublished, track}
+    let record = {artist , title , yearPublished}
 // - Add the new object to the end of the `collection` array
 console.log(artist, 'has been added to the collection');
 collection.push(record);
@@ -57,7 +57,7 @@ for (let i = 0; i < collection.length; i++) {
     
 }
 //   - Return the array with the matching results. If no results are found, return an empty array.
-return holdTheseArtists && console.log( holdTheseArtists);
+return holdTheseArtists && console.log('Find by Artist:', artist, holdTheseArtists);
 }
 
 // - Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. Check that for artists with multiple matches, all are found.
@@ -81,13 +81,14 @@ function search(artistCheck, yearCheck) {
         }
 //     - If no results are found, return an empty array.  
     }
-return search && console.log(searchResult);
+//     - If there is no search object or an empty search object provided as input, then return all albums in the `collection`.
+return search && console.log('Searching:', artistCheck, searchResult);
 }
 search('The Pharcyde', '1992');
 search('Ray Charles', '1957');
 search('Jurassic 5', '2000');
 
-//     - If there is no search object or an empty search object provided as input, then return all albums in the `collection`.
+
 
 
 
