@@ -1,0 +1,23 @@
+body {
+    background-image: linear-gradient(to right, rgb(237, 197, 238) , rgb(95, 26, 104));
+  }  
+div {
+        width: 1000px;
+        height: 1000px;
+        border: 5px solid #621c8a;
+        margin-bottom: 2em;
+        background: url(record.png); 
+        background-size: 100px 100px;
+      }
+h1 {
+    text-align: center; 
+    }
+h1 span{
+    background-color: #b9a9c2;
+}
+p{
+    text-align: center;
+}
+p span{
+    background-color: #b9a9c2;
+}
